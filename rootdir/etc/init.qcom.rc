@@ -225,6 +225,12 @@ on boot
     # limit discard size to 128MB in order to avoid long IO latency
     write /sys/block/sda/queue/discard_max_bytes 134217728
 
+    # Enable qcrild and data services
+    enable vendor.qcrild
+    enable vendor.qcrild2
+    enable vendor.dataqti
+    enable vendor.dataadpl
+
 # msm specific files that need to be created on /data
 on post-fs-data
     mkdir /data/vendor/misc 01771 system system
@@ -497,15 +503,8 @@ service qcom-c_core-sh  /vendor/bin/init.qcom.class_core.sh
     user root
     oneshot
 
-service qcom-c_main-sh /vendor/bin/init.class_main.sh
-    class main
-    user root
-    group root system
-    oneshot
-
 #xiaomi bsp-wifi: start vendor.cnss_diag is added by bsp-wifi
 on property:vold.decrypt=trigger_restart_framework
-    start qcom-c_main-sh
     start wcnss-service
     start vendor.cnss_diag
 
@@ -524,12 +523,6 @@ service ftmd /system/vendor/bin/ftmdaemon -n -dd
     class late_start
     user root
     group root system diag vendor_qti_diag
-
-service qmiproxy /system/bin/qmiproxy
-    class main
-    user radio
-    group radio diag
-    disabled
 
 on property:sys.sysctl.tcp_adv_win_scale=*
     write /proc/sys/net/ipv4/tcp_adv_win_scale ${sys.sysctl.tcp_adv_win_scale}
@@ -772,20 +765,6 @@ service battery_monitor /system/bin/battery_monitor
     user system
     group system
     disabled
-
-service vendor.ril-daemon2 /vendor/bin/hw/rild -c 2
-    class main
-    user radio
-    disabled
-    group radio cache inet misc audio sdcard_r sdcard_rw diag oem_2901 log
-    capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW
-
-service vendor.ril-daemon3 /vendor/bin/hw/rild -c 3
-    class main
-    user radio
-    disabled
-    group radio cache inet misc audio sdcard_r sdcard_rw diag oem_2901 log
-    capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW
 
 service profiler_daemon /system/bin/profiler_daemon
     class late_start
