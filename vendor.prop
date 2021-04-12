@@ -209,7 +209,6 @@ ril.subscription.types=RUIM
 ro.com.android.dataroaming=false
 ro.telephony.default_cdma_sub=0
 ro.telephony.default_network=22,22
-ro.telephony.iwlan_operation_mode=legacy
 telephony.lteOnCdmaDevice=1
 
 # RCS
