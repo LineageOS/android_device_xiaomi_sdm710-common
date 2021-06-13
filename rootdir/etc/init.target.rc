@@ -69,9 +69,6 @@ on fs
     chmod 0644 /proc/tp_selftest
 
 on late-fs
-    # Wait for keymaster
-    exec_start wait_for_keymaster
-
     # Mount RW partitions which need run fsck
     mount_all /vendor/etc/fstab.qcom --late
 
