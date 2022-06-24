@@ -11,6 +11,7 @@ genfscon sysfs /devices/platform/soc/soc:fingerprint_goodix/proximity_state    u
 
 # FOD
 genfscon sysfs /devices/virtual/touch/tp_dev/fod_status                        u:object_r:sysfs_fingerprint:s0
+genfscon sysfs /touchpanel/fod_status                                          u:object_r:sysfs_fingerprint:s0
 
 # Health
 genfscon sysfs /class/power_supply/battery/capacity                                                 u:object_r:sysfs_battery_supply:s0
