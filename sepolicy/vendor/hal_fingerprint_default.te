@@ -15,3 +15,6 @@ allow hal_fingerprint_default sysfs_msm_subsys:file r_file_perms;
 
 set_prop(hal_fingerprint_default, vendor_fp_prop)
 hal_client_domain(hal_fingerprint_default, hal_perf)
+
+allow hal_fingerprint_default persist_fingerprint_file:dir create_dir_perms;
+allow hal_fingerprint_default persist_fingerprint_file:file create_file_perms;
