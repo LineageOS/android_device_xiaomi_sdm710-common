@@ -1,1 +1,2 @@
 allow cnd vendor_hal_slmadapter_hwservice:hwservice_manager find;
+get_prop(cnd, wifi_hal_prop)
