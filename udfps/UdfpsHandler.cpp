@@ -24,6 +24,7 @@ static const char* kFodUiPaths[] = {
 };
 
 static const char* kFodStatusPaths[] = {
+        "/sys/touchpanel/fod_status",
         "/sys/devices/virtual/touch/tp_dev/fod_status",
 };
 
