@@ -21,6 +21,14 @@ if [ ! -f "${HELPER}" ]; then
 fi
 source "${HELPER}"
 
+function blob_fixup() {
+    case "${1}" in
+        system_ext/lib64/lib-imsvideocodec.so)
+            "${PATCHELF}" --add-needed "lib-imsvtshim.so" "${2}"
+            ;;
+    esac
+}
+
 # Default to sanitizing the vendor folder before extraction
 CLEAN_VENDOR=true
 
