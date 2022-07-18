@@ -1,0 +1,10 @@
+// lib-imsvtshim
+cc_library {
+    name: "lib-imsvtshim",
+    shared_libs: [
+        "libgui",
+        "libutils",
+    ],
+    srcs: [ "lib-imsvtshim.cpp" ],
+    system_ext_specific: true,
+}
