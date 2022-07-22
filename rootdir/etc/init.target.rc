@@ -121,8 +121,8 @@ on boot
     write /dev/cpuset/system-background/cpus 0-7
 
     # DBMDX character device
-    chmod 0660 /dev/ir_spi
-    chown system system /dev/ir_spi
+    chmod 0660 /dev/lirc0
+    chown system system /dev/lirc0
     chown media media /dev/dbmdx-1
     chmod 0770 /dev/dbmdx-1
     chown system system /sys/class/thermal/thermal_message/sconfig
