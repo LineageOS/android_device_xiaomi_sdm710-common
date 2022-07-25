@@ -27,11 +27,11 @@ vendor/lib/libssrec.so
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libshoebox.so
 
-# Bluetooth
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
-vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib64/libbtnv.so
+# Bluetooth - from pyxis
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|2401640a10df4de23f704b87c4adab2da9ed111d
+vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|a979981c55f3dcaf6cf2212e71b901ca4d58b959
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|02123c4f94173f81d8830821f28ba042efc097b4
+vendor/lib64/libbtnv.so|07e031527e60ce5e62a5017fd1d7ff83ef1aafcf
 
 # Bluetooth (A2DP)
 vendor/lib/hw/audio.bluetooth_qti.default.so
