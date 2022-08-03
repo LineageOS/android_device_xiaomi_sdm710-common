@@ -20,3 +20,4 @@
 /dev/block/bootdevice/by-name/persist                   /mnt/vendor/persist      ext4    nosuid,noatime,nodev,barrier=1                       wait,check
 
 /devices/platform/soc/a600000.ssusb/a600000.dwc3/xhci-hcd.*.auto*     /storage/usbotg    vfat    nosuid,nodev    wait,voldmanaged=usbotg:auto
+/devices/platform/soc/8804000.sdhci/mmc_host*                         /storage/sdcard1   vfat    nosuid,nodev    wait,voldmanaged=sdcard1:auto,encryptable=footer
