@@ -16,6 +16,24 @@
       "message": "https://review.lineageos.org/c/LineageOS/android_device_xiaomi_lmi/+/334581",
       "revId": "fc58c726848c63a41592bf455a92bb5e4ecfd77a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9f474d1c_c1ea48fc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30475
+      },
+      "writtenOn": "2022-08-03T16:51:36Z",
+      "side": 1,
+      "message": "Would you like to fix this on Pyxis\u0027 side and move its ACDB blobs to Forte subdir?",
+      "parentUuid": "8cff43a7_f9e59523",
+      "revId": "fc58c726848c63a41592bf455a92bb5e4ecfd77a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
