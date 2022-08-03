@@ -16,6 +16,24 @@
       "message": "Just add SD card entry, no need to decommonize it",
       "revId": "3873055d8ea207f88da9fd062bbe2e1a2090e169",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b4304059_3cf5c1e0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30475
+      },
+      "writtenOn": "2022-08-03T16:51:11Z",
+      "side": 1,
+      "message": "OK",
+      "parentUuid": "c2d136cc_58b52c6b",
+      "revId": "3873055d8ea207f88da9fd062bbe2e1a2090e169",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
