@@ -54,7 +54,6 @@ on post-fs-data
     mkdir /data/vendor/goodix/gf_data/enroll 0770 system system
     mkdir /data/vendor/syna 0770 system system
     mkdir /data/vendor/syna/ist/ 0770 system system
-    chown system system /data/vendor
 
 # IR
 on boot
