@@ -20,6 +20,7 @@ cc_binary {
     init_rc: ["vendor.lineage.livedisplay@2.1-service.sdm710.rc"],
     relative_install_path: "hw",
     srcs: [
+        "AntiFlicker.cpp",
         "SunlightEnhancement.cpp",
         "service.cpp",
     ],
