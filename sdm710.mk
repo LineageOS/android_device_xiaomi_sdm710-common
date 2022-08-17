@@ -333,11 +333,11 @@ PRODUCT_PACKAGES += \
     init.qcom.sh
 
 PRODUCT_PACKAGES += \
-    init.fingerprint.rc \
     init.qcom.power.rc \
     init.qcom.rc \
     init.recovery.qcom.rc \
     init.target.rc \
+    init.xiaomi.rc \
     ueventd.qcom.rc
 
 # Sensors
