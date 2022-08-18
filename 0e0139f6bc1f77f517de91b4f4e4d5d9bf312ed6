@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "842d9788_1842e696",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 27772
+      },
+      "writtenOn": "2022-08-18T09:43:15Z",
+      "side": 1,
+      "message": "No need to use ?\u003d because it means assign-if-not-defined-yet\n:\u003d in makefiles means force-assign,\nso if we inherit common BC.mk at line X and override by :\u003d at line X+Y then the override works\n\nChecked by get_build_var",
+      "revId": "0e0139f6bc1f77f517de91b4f4e4d5d9bf312ed6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
