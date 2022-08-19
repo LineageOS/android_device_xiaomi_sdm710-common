@@ -139,6 +139,9 @@ BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 
 # VINTF
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
+ifeq ($(TARGET_HAS_NFC),true)
+DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest_nfc.xml
+endif
 DEVICE_MATRIX_FILE += $(COMMON_PATH)/compatibility_matrix.xml
 
 # VNDK

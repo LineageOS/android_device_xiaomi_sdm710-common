@@ -30,6 +30,10 @@ write_headers "grus pyxis sirius vela"
 # The standard common blobs
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
 
+printf "\n%s\n" "ifeq (\$(TARGET_HAS_NFC),true)" >> "${PRODUCTMK}"
+write_makefiles "${MY_DIR}/proprietary-files-nfc.txt" true
+echo "endif" >> "${PRODUCTMK}"
+
 # Finish
 write_footers
 
