@@ -2,6 +2,10 @@
 /dev/socket/audio_hw_socket                                             u:object_r:audio_socket:s0
 /mnt/vendor/persist/audio(/.*)?                                         u:object_r:persist_audio_file:s0
 
+# Block devices
+/dev/block/platform/soc/1d84000.ufshc/by-name/logdump                   u:object_r:metadata_block_device:s0
+/dev/block/platform/soc/7c4000.sdhci/by-name/logdump                    u:object_r:metadata_block_device:s0
+
 # Camera
 /mnt/vendor/persist/camera(/.*)?                                        u:object_r:persist_camera_file:s0
 /vendor/bin/remosaic_daemon                                             u:object_r:remosaic_daemon_exec:s0
