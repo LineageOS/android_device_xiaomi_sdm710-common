@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5e3f77bf_4c111228",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-09-01T18:30:55Z",
+      "side": 1,
+      "message": "I would definitely appreciate tracking what has been edited and what comes from stock, so maybe split imports and edits in different commits?",
+      "revId": "2a36b76e64eeb23cb94faab21fa0ba061370fdcc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
