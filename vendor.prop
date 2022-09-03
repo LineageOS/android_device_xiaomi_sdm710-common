@@ -129,6 +129,9 @@ persist.vendor.qcom.bluetooth.twsp_state.enabled=false
 ro.bluetooth.a2dp_offload.supported=true
 ro.bluetooth.emb_wp_mode=true
 ro.bluetooth.wipower=true
+ro.vendor.bluetooth.wipower=false
+vendor.bluetooth.soc=cherokee
+vendor.qcom.bluetooth.soc=cherokee
 
 # CNE
 persist.vendor.cne.feature=1
