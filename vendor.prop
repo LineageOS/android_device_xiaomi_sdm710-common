@@ -162,7 +162,6 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 debug.egl.hw=0
 debug.sf.hw=0
 persist.demo.hdmirotationlock=false
-persist.sys.sf.color_mode=9
 persist.sys.sf.native_mode=2
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
