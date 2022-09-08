@@ -4,4 +4,6 @@ type gps_device, dev_type;
 
 type lirc_device, dev_type;
 
+typeattribute system_block_device super_block_device_type;
+
 type ultrasound_device, dev_type;
