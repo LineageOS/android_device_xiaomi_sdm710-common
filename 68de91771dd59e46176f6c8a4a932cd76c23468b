@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ea28716d_dc51279b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-09-09T00:57:11Z",
+      "side": 1,
+      "message": "Works\nInstructions: https://lineage.youd.dev/338199/1/devices/pyxis/install and https://lineage.youd.dev/338199/1/devices/xmsirius/install\n",
+      "revId": "68de91771dd59e46176f6c8a4a932cd76c23468b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
