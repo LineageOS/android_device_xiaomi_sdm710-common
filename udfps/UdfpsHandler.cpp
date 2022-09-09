@@ -104,6 +104,14 @@ class XiaomiSdm710UdfpsHander : public UdfpsHandler {
     void onFingerUp() {
         // nothing
     }
+
+    void onAcquired(int32_t /*result*/, int32_t /*vendorCode*/) {
+        // nothing
+    }
+
+    void cancel() {
+        // nothing
+    }
   private:
     fingerprint_device_t *mDevice;
 };
