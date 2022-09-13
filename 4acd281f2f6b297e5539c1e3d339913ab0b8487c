@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9beca653_663acbc1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30475
+      },
+      "writtenOn": "2022-09-13T14:08:01Z",
+      "side": 1,
+      "message": "Fixes a non-functional AudioFX due to incorrectly configured audio effects that are mapped to qcom libraries that we don\u0027t ship.",
+      "revId": "4acd281f2f6b297e5539c1e3d339913ab0b8487c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
