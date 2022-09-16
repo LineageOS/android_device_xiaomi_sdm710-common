@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c95c0bc2_95a79b2d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30475
+      },
+      "writtenOn": "2022-09-16T18:57:14Z",
+      "side": 1,
+      "message": "Verified on Pyxis",
+      "revId": "517ef7781854a7885782bcbf8b03493eaf08f7a9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
