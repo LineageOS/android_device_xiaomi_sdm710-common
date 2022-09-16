@@ -38,6 +38,9 @@ genfscon proc /sys/kernel/sched_boost                 u:object_r:proc_sysctl_sch
 genfscon sysfs /power/rpmh_stats/master_stats         u:object_r:sysfs_rpm:s0
 genfscon sysfs /power/system_sleep/stats              u:object_r:sysfs_system_sleep_stats:s0
 
+# Sensors nodes
+genfscon sysfs /touchpanel/fp_state                   u:object_r:sysfs_sensors:s0
+
 # Subsystem
 genfscon sysfs /devices/platform/soc/soc:qcom,cpubw                            u:object_r:sysfs_msm_subsys:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,gpubw                            u:object_r:sysfs_msm_subsys:s0

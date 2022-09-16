@@ -161,9 +161,8 @@ PRODUCT_PACKAGES += \
 
 ifeq ($(TARGET_HAS_UDFPS),true)
 PRODUCT_PACKAGES += \
-    libudfpshandler
-
-PRODUCT_PACKAGES += \
+    libudfpshandler \
+    sensors.udfps \
     vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor
 endif
 
