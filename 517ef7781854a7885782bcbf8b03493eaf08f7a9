@@ -16,6 +16,23 @@
       "message": "Verified on Pyxis",
       "revId": "517ef7781854a7885782bcbf8b03493eaf08f7a9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5195f8ff_411addde",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-09-16T19:05:27Z",
+      "side": 1,
+      "message": "Chapeau.\nMind moving this HAL to hardware/Xiaomi? I\u0027m sure Bruno would use it as well",
+      "revId": "517ef7781854a7885782bcbf8b03493eaf08f7a9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
