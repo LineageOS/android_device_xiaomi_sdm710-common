@@ -33,6 +33,24 @@
       "message": "Chapeau.\nMind moving this HAL to hardware/Xiaomi? I\u0027m sure Bruno would use it as well",
       "revId": "517ef7781854a7885782bcbf8b03493eaf08f7a9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f66cc1d4_051f1fe5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30475
+      },
+      "writtenOn": "2022-09-16T19:15:17Z",
+      "side": 1,
+      "message": "We can do, of course. But this needs to be updated to use more paths than /sys/touchpanel/fp_state",
+      "parentUuid": "5195f8ff_411addde",
+      "revId": "517ef7781854a7885782bcbf8b03493eaf08f7a9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
