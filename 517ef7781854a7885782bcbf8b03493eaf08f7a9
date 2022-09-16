@@ -51,6 +51,23 @@
       "parentUuid": "5195f8ff_411addde",
       "revId": "517ef7781854a7885782bcbf8b03493eaf08f7a9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "95210d1f_b77c6640",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30475
+      },
+      "writtenOn": "2022-09-16T19:32:02Z",
+      "side": 1,
+      "message": "Anyway I assume that 2.0 or 2.1 will later follow for devices that implement 2.0/2.1 multiHAL. How to deal with?",
+      "revId": "517ef7781854a7885782bcbf8b03493eaf08f7a9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
