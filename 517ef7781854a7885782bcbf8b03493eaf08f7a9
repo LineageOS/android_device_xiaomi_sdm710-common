@@ -86,6 +86,24 @@
       "parentUuid": "95210d1f_b77c6640",
       "revId": "517ef7781854a7885782bcbf8b03493eaf08f7a9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "220ffba4_70dcf2c9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-09-16T20:29:41Z",
+      "side": 1,
+      "message": "We can either just hardcore /sys/touchpanel/fp_state or make it settable with a Soong conditional (check powershare HAL in hw/xiaomi)",
+      "parentUuid": "f66cc1d4_051f1fe5",
+      "revId": "517ef7781854a7885782bcbf8b03493eaf08f7a9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
