@@ -104,6 +104,42 @@
       "parentUuid": "f66cc1d4_051f1fe5",
       "revId": "517ef7781854a7885782bcbf8b03493eaf08f7a9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "df17b832_0c97c9ac",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30475
+      },
+      "writtenOn": "2022-09-17T07:37:26Z",
+      "side": 1,
+      "message": "Or add list of possible paths like for fod_status in UDFPS handler.",
+      "parentUuid": "220ffba4_70dcf2c9",
+      "revId": "517ef7781854a7885782bcbf8b03493eaf08f7a9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fa903e9f_e03e2dec",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30475
+      },
+      "writtenOn": "2022-09-17T07:37:26Z",
+      "side": 1,
+      "message": "Will move during the weekend.",
+      "parentUuid": "5c5041e2_5154b523",
+      "revId": "517ef7781854a7885782bcbf8b03493eaf08f7a9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
