@@ -16,6 +16,24 @@
       "message": "Why two PRODUCT_PACKAGES?",
       "revId": "61b0212d69f8d0345c6acf3f90280481c067bde0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "50e380c6_3942eaf5",
+        "filename": "sdm710.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 165,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-09-19T18:15:21Z",
+      "side": 1,
+      "message": "I keep libs and binaries split from libs needed by proprietary stuff",
+      "parentUuid": "ee133d87_6693e54b",
+      "revId": "61b0212d69f8d0345c6acf3f90280481c067bde0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
