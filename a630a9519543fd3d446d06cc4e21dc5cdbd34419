@@ -33,6 +33,24 @@
       "message": "Works fine on sirius",
       "revId": "a630a9519543fd3d446d06cc4e21dc5cdbd34419",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ed3a84f9_fef4bbcf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30475
+      },
+      "writtenOn": "2022-10-01T09:07:54Z",
+      "side": 1,
+      "message": "Thank you, Alex.",
+      "parentUuid": "f854422c_14649b44",
+      "revId": "a630a9519543fd3d446d06cc4e21dc5cdbd34419",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
