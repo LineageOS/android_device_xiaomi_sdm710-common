@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a62baa72_473f1078",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30475
+      },
+      "writtenOn": "2022-10-07T15:41:44Z",
+      "side": 1,
+      "message": "Verified on Pyxis - all files from public.libraries.txt are correctly labelled.",
+      "revId": "5768e0117c292dd5d1d86bf06dfaed4a40ad1c2c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
