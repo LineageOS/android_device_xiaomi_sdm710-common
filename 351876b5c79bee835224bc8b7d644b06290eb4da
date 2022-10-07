@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1b363f54_e02933e9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30475
+      },
+      "writtenOn": "2022-10-07T12:15:52Z",
+      "side": 1,
+      "message": "After mentioned commit the build is not flashable because partitions are too large.\nReduction of partitions\u0027 reservations fixes the problem.\n\nVerified on Pyxis.",
+      "revId": "351876b5c79bee835224bc8b7d644b06290eb4da",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
