@@ -1,3 +1,0 @@
-# Allow access and read WiFi vendor data
-allow hal_bluetooth_qti wifi_vendor_data_file:dir search;
-allow hal_bluetooth_qti wifi_vendor_data_file:file r_file_perms;
