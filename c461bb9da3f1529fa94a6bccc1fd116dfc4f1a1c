@@ -74,6 +74,24 @@
       "parentUuid": "fbaff98b_1e4fa091",
       "revId": "c461bb9da3f1529fa94a6bccc1fd116dfc4f1a1c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a60a74d1_3c30dc69",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-10-22T10:55:42Z",
+      "side": 1,
+      "message": "sepolicy is only supposed to be added if it breaks something, so ultrawide sensor doesn\u0027t work without this?",
+      "parentUuid": "9d99eff6_9e3b3eae",
+      "revId": "c461bb9da3f1529fa94a6bccc1fd116dfc4f1a1c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
