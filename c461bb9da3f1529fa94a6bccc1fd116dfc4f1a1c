@@ -56,6 +56,24 @@
       "message": "What does it fixes?",
       "revId": "c461bb9da3f1529fa94a6bccc1fd116dfc4f1a1c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9d99eff6_9e3b3eae",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30475
+      },
+      "writtenOn": "2022-10-22T10:26:43Z",
+      "side": 1,
+      "message": "It happens when you switch to ultrawide sensor... Camera HAL needs to communicate with graphics allocator.",
+      "parentUuid": "fbaff98b_1e4fa091",
+      "revId": "c461bb9da3f1529fa94a6bccc1fd116dfc4f1a1c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
