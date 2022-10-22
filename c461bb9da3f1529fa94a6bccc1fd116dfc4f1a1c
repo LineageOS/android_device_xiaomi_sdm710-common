@@ -92,6 +92,24 @@
       "parentUuid": "9d99eff6_9e3b3eae",
       "revId": "c461bb9da3f1529fa94a6bccc1fd116dfc4f1a1c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a7de8c0c_e602f13f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30475
+      },
+      "writtenOn": "2022-10-22T11:25:06Z",
+      "side": 1,
+      "message": "No, if you switch it in a camera app then FC follows and camera Hal crashes.",
+      "parentUuid": "a60a74d1_3c30dc69",
+      "revId": "c461bb9da3f1529fa94a6bccc1fd116dfc4f1a1c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
