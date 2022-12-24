@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "63520979_fdeca186",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-12-24T18:14:21Z",
+      "side": 1,
+      "message": "\u003eaudio_policy_configuration_V6_0.xsd\nWe aren\u0027t using audio HAL v6",
+      "revId": "e3238e38820d2c82348f5011d40a4eeb38adce06",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
