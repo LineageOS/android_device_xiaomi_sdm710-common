@@ -16,6 +16,24 @@
       "message": "\u003eaudio_policy_configuration_V6_0.xsd\nWe aren\u0027t using audio HAL v6",
       "revId": "e3238e38820d2c82348f5011d40a4eeb38adce06",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "99dff8f0_2dd033e0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30475
+      },
+      "writtenOn": "2022-12-25T17:19:10Z",
+      "side": 1,
+      "message": "Will drop",
+      "parentUuid": "63520979_fdeca186",
+      "revId": "e3238e38820d2c82348f5011d40a4eeb38adce06",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
