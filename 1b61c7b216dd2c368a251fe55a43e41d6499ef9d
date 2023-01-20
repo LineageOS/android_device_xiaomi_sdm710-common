@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c268dd11_4b8e26d6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30475
+      },
+      "writtenOn": "2023-01-20T17:06:31Z",
+      "side": 1,
+      "message": "Tested by community user on Pyxis with Samsung TV and Windows 10",
+      "revId": "1b61c7b216dd2c368a251fe55a43e41d6499ef9d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
