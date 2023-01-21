@@ -64,8 +64,8 @@ BOARD_HAVE_QCOM_FM := true
 endif
 
 # Init
-TARGET_INIT_VENDOR_LIB ?= //$(COMMON_PATH):init_xiaomi_kona
-TARGET_RECOVERY_DEVICE_MODULES ?= init_xiaomi_kona
+TARGET_INIT_VENDOR_LIB ?= //$(COMMON_PATH):init_xiaomi_sdm710
+TARGET_RECOVERY_DEVICE_MODULES ?= init_xiaomi_sdm710
 
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 2
