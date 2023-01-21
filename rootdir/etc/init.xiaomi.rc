@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+import /vendor/etc/init/hw/init.xiaomi.device.rc
+
 # Fingerprint
 on init
     # Goodix fingerprint
