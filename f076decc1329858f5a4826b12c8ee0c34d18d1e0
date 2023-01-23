@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c5c037c1_7874368a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2023-01-23T05:56:36Z",
+      "side": 1,
+      "message": "Kernel sided changes would be pushed soon, once it\u0027s tested on all devices",
+      "revId": "f076decc1329858f5a4826b12c8ee0c34d18d1e0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
