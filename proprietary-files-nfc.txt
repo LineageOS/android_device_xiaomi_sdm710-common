@@ -1,7 +1,10 @@
-# Secure element
-vendor/bin/hw/vendor.qti.secure_element@1.0-service
-vendor/etc/init/vendor.qti.secure_element@1.0-service.rc
-vendor/lib64/hw/android.hardware.secure_element@1.0-impl.so
+# Unpinned blobs from pyxis-user 11 RKQ1.200826.002 V12.5.3.0.RFCEUXM release-keys
+# grus: grus-user 11 RKQ1.200826.002 V12.5.1.0.RFBMIXM release-keys
+
+# Secure element - from grus
+vendor/bin/hw/vendor.qti.secure_element@1.0-service|48621dda1de283dcf0f5c93f0d17bcd53f3f2072
+vendor/etc/init/vendor.qti.secure_element@1.0-service.rc|14796c45011ad0d4735e0f3c9dbc646e6af205aa
+vendor/lib64/hw/android.hardware.secure_element@1.0-impl.so|99bb218cf8491ac7e031dc389267454b4acbcfe6
 
 # Secure element (power manager)
 vendor/bin/hw/vendor.qti.esepowermanager@1.0-service

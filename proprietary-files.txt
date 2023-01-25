@@ -1,5 +1,5 @@
-# Unpinned blobs from grus-user 11 RKQ1.200826.002 V12.5.1.0.RFBMIXM release-keys
-# pyxis: pyxis-user 11 RKQ1.200826.002 V12.5.2.0.RFCMIXM release-keys
+# Unpinned blobs from pyxis-user 11 RKQ1.200826.002 V12.5.3.0.RFCEUXM release-keys
+# grus: grus-user 11 RKQ1.200826.002 V12.5.1.0.RFBMIXM release-keys
 
 # ADSP
 vendor/bin/adsprpcd
@@ -15,21 +15,23 @@ vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so
 
 # Audio
 vendor/lib/libacdb-fts.so
-vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
 vendor/lib/libadiertac.so
 vendor/lib/libaudcal.so
 vendor/lib/libqtigef.so
 
+# Audio - from grus
+vendor/lib/libacdbloader.so|d1a0c21891a0aead55fd41e430ac10347b5aebab
+
 # Audio FX modules
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libshoebox.so
 
-# Bluetooth - from pyxis
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|2401640a10df4de23f704b87c4adab2da9ed111d
-vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|a979981c55f3dcaf6cf2212e71b901ca4d58b959
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|02123c4f94173f81d8830821f28ba042efc097b4
-vendor/lib64/libbtnv.so|07e031527e60ce5e62a5017fd1d7ff83ef1aafcf
+# Bluetooth
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
+vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
+vendor/lib64/libbtnv.so
 
 # Bluetooth (A2DP)
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
@@ -239,12 +241,12 @@ vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 vendor/lib/vendor.qti.hardware.dsp@1.0.so
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
-# FM - from pyxis
-system_ext/lib64/fm_helium.so|55ef376cc802574df92025bebaba1cebcc74a918
-system_ext/lib64/libfm-hci.so|0cfbf3d84724428721973cc7ad22f5d1e1368591
-system_ext/lib64/vendor.qti.hardware.fm@1.0.so|4a2522113d6b737a87d3b43233f1afa94d9e45ad
-vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|1d191661a6aee776e3b2a851354dc2cbc819bfef
-vendor/lib64/vendor.qti.hardware.fm@1.0.so|17e86e9a2054db733d955fcf1066f6e06a44fb21
+# FM
+system_ext/lib64/fm_helium.so
+system_ext/lib64/libfm-hci.so
+system_ext/lib64/vendor.qti.hardware.fm@1.0.so
+vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
 # Graphics (Adreno)
 vendor/lib/egl/eglSubDriverAndroid.so
@@ -452,6 +454,7 @@ vendor/lib/libgcs.so
 vendor/lib/libjnihelper.so
 vendor/lib/liblistensoundmodel2.so
 vendor/lib/libmulawdec.so
+vendor/lib/librice.so
 vendor/lib/libsmwrapper.so
 
 # Media
