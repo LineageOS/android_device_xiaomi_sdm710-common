@@ -453,10 +453,6 @@ vendor/lib/libmulawdec.so
 vendor/lib/libsmwrapper.so
 
 # Media
-system_ext/lib/libmmosal.so
-system_ext/lib/libmmparser_lite.so
-system_ext/lib64/libmmosal.so
-system_ext/lib64/libmmparser_lite.so
 vendor/lib/libmmosal.so
 vendor/lib64/libmmosal.so
 
@@ -765,7 +761,7 @@ vendor/etc/wifi/aoa_cldb_falcon.bin
 vendor/etc/wifi/aoa_cldb_swl14.bin
 
 # WiFi Display (system) - from lemonadep - TP1A.220624.003
--system/framework/WfdCommon.jar|323859204993cb8bf89821baeb08a6a85e750c65
+-framework/WfdCommon.jar|323859204993cb8bf89821baeb08a6a85e750c65
 system_ext/bin/wfdservice|fc204600629fbf60c4c6c187f0943d21643fdb4a
 system_ext/etc/init/wfdservice.rc|907def8565d8f91f531ca7dfad880af05d540b0c
 system_ext/etc/seccomp_policy/wfdservice.policy|37994de64d6bd127898bd556cd614db459fe07ec
