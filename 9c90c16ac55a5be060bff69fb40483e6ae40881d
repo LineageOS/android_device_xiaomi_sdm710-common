@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e5a81174_cbd3c31d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30475
+      },
+      "writtenOn": "2023-01-26T15:28:26Z",
+      "side": 1,
+      "message": "Bluetooth functionality verified by myself on Pyxis",
+      "revId": "9c90c16ac55a5be060bff69fb40483e6ae40881d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
