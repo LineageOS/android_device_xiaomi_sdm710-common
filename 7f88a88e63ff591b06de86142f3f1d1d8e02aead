@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "694aad9a_9e78a2af",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30475
+      },
+      "writtenOn": "2023-01-26T15:28:48Z",
+      "side": 1,
+      "message": "Tested on Pyxis by myself, on Sirius by Alex and on Grus by Seba.",
+      "revId": "7f88a88e63ff591b06de86142f3f1d1d8e02aead",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
