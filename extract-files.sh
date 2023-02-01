@@ -26,6 +26,9 @@ function blob_fixup() {
         system_ext/lib64/lib-imsvideocodec.so)
             "${PATCHELF}" --add-needed "lib-imsvtshim.so" "${2}"
             ;;
+        vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy)
+            echo 'madvise: 1' >> ${2}
+            ;;
     esac
 }
 
