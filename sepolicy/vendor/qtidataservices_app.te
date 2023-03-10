@@ -1,0 +1,1 @@
+allow qtidataservices_app qtidataservices_app:socket { create read write }; # { ioctl } hits neverallow
