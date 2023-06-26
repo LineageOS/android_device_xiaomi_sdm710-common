@@ -16,6 +16,23 @@
       "message": "https://github.com/xiaomi-sdm710-devs/proprietary_vendor_xiaomi_sdm710-common",
       "revId": "6682a69709dc5cb82be12bc898d1444da3307a14",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "eb6600df_3e2fb434",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30475
+      },
+      "writtenOn": "2023-06-26T09:04:50Z",
+      "side": 1,
+      "message": "IMHO the implementation of that symbol is wrong:\n\nextern \"C\" void _ZN7android7SurfaceC1ERKNS_2spINS_22IGraphicBufferProducerEEEb(\n        const sp\u003cIGraphicBufferProducer\u003e\u0026 bufferProducer, bool controlledByApp) {\n    _ZN7android7SurfaceC1ERKNS_2spINS_22IGraphicBufferProducerEEEbRKNS1_INS_7IBinderEEE(\n            bufferProducer, controlledByApp, NULL);\n}\n\nThis is because the function is C++ constructor and the implementation in plain C is a function returning void. This is wrong assumption because from ABI point of view any constructor is thiscall that should have first argument pointer to class and returns the same pointer...\n\nE.g.\nclass Object {\n   Object(int param);\n   ...\n}\n\nis NOT from ABI POV:\nvoid Object::Object(int param);\nBUT\nObject* Object::Object(Object *this, int param);\n\nSmall example:\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nstruct Object {\n        void *ptr;\n        Object(void *param);\n};\n\nObject::Object(void *param) : ptr(param)\n{\n}\n\nAssembly of Object::Object(void *param):\n_ZN6ObjectC2EPv:\n        .cfi_startproc\n        str     x1, [x0]\n        ret\n        .cfi_endproc\n\nThe 1st argument (this pointer) is passed in register x0 and 2nd argument (param) is passed in x1. Value of x1 (param) is stored in field ptr (str x1, [x0])\n\nWrong impl:\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nextern \"C\" void _ZN6ObjectC2EPv(void *param);\n\nextern \"C\" void _ZN6ObjectC2Ev()\n{\n        _ZN6ObjectC2EPv(NULL);\n}\n\nand its assembly:\n_ZN6ObjectC2Ev:\n        .cfi_startproc\n        mov     x0, 0\n        b       _ZN6ObjectC2EPv\n        .cfi_endproc\n\nCompletely wrong, you are calling _ZN6ObjectC2EPv (aka Object::Object(void *)) and using x0 for the parameter instead of x1. This result in crash because the called constructor assumes in register x0 pointer to object and you are passing NULL in x0 and garbage in x1. So the constructor dereferences pointer stored in reg x0 that is NULL.\n\nCorrect impl:\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nextern \"C\" void* _ZN6ObjectC2EPv(void *_this, void *param);\n\nextern \"C\" void* _ZN6ObjectC2Ev(void *_this)\n{\n        return _ZN6ObjectC2EPv(_this, NULL);\n}\n\nand assembly:\n_ZN6ObjectC2Ev:\n.LFB26:\n        .cfi_startproc\n        mov     x1, 0\n        b       _ZN6ObjectC2EPv\n        .cfi_endproc\n\nNow this is correct, for argument param is correctly used register x1 and x0 contains pointer to Object instance.",
+      "revId": "6682a69709dc5cb82be12bc898d1444da3307a14",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
