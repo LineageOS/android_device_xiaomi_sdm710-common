@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2022 The LineageOS Project
+# Copyright (C) 2022-2023 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -184,8 +184,8 @@ PRODUCT_PACKAGES += \
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health-service.example \
-    android.hardware.health-service.example_recovery
+    android.hardware.health-service.qti \
+    android.hardware.health-service.qti_recovery
 
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1.vendor
