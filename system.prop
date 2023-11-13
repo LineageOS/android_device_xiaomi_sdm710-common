@@ -29,9 +29,6 @@ vendor.bluetooth.soc=cherokee
 # Camera
 camera.disable_zsl_mode=true
 
-# Charger
-ro.charger.enable_suspend=true
-
 # Data modules
 persist.vendor.data.mode=concurrent
 ro.vendor.use_data_netmgrd=true
