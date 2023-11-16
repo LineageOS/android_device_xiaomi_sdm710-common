@@ -214,7 +214,7 @@ on boot
     chmod 0666 /sys/class/touch/touch_dev/palm_sensor
     chown system system /sys/class/touch/tp_dev/fod_status
 
-on charger
+on property:init.svc.vendor.charger=running
     start vendor.power_off_alarm
     setprop sys.usb.configfs 1
 
