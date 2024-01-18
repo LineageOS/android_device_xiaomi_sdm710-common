@@ -158,32 +158,10 @@ function configure_memory_parameters() {
     configure_read_ahead_kb_values
 }
 
-function start_hbtp()
-{
-        # Start the Host based Touch processing but not in the power off mode.
-        bootmode=`getprop ro.bootmode`
-        if [ "charger" != $bootmode ]; then
-                start vendor.hbtp
-        fi
-}
-
 # Set the default IRQ affinity to the silver cluster. When a
 # CPU is isolated/hotplugged, the IRQ affinity is adjusted
 # to one of the CPU from the default IRQ affinity mask.
 echo 3f > /proc/irq/default_smp_affinity
-
-if [ -f /sys/devices/soc0/hw_platform ]; then
-    hw_platform=`cat /sys/devices/soc0/hw_platform`
-else
-    hw_platform=`cat /sys/devices/system/soc/soc0/hw_platform`
-fi
-
-# Start Host based Touch processing
-case "$hw_platform" in
-"MTP" | "Surf" | "RCM" | "QRD" )
-    start_hbtp
-    ;;
-esac
 
 # Core control parameters on silver
 echo 0 0 0 0 1 1 > /sys/devices/system/cpu/cpu0/core_ctl/not_preferred
