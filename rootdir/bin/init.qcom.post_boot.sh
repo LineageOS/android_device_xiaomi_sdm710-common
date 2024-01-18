@@ -199,8 +199,6 @@ echo 85 > /sys/devices/system/cpu/cpu6/cpufreq/schedutil/hispeed_load
 
 echo "0:1209600" > /sys/module/cpu_boost/parameters/input_boost_freq
 echo 40 > /sys/module/cpu_boost/parameters/input_boost_ms
-echo "0:1209600 1:0 2:0 3:0 4:0 5:0 6:2054400 7:0" > /sys/module/cpu_boost/parameters/powerkey_input_boost_freq
-echo 400 > /sys/module/cpu_boost/parameters/powerkey_input_boost_ms
 
 # Set Memory parameters
 configure_memory_parameters
@@ -221,29 +219,6 @@ do
     echo 1600 > $cpubw/bw_hwmon/idle_mbps
 done
 
-# Enable mem_latency governor for DDR scaling
-for memlat in /sys/class/devfreq/*qcom,memlat-cpu*
-do
-    echo "mem_latency" > $memlat/governor
-    echo 10 > $memlat/polling_interval
-    echo 400 > $memlat/mem_latency/ratio_ceil
-done
-
-# Enable mem_latency governor for L3 scaling
-for memlat in /sys/class/devfreq/*qcom,l3-cpu*
-do
-    echo "mem_latency" > $memlat/governor
-    echo 10 > $memlat/polling_interval
-    echo 400 > $memlat/mem_latency/ratio_ceil
-done
-
-# Enable userspace governor for L3 cdsp nodes
-for l3cdsp in /sys/class/devfreq/*qcom,l3-cdsp*
-do
-    echo "userspace" > $l3cdsp/governor
-    chown -h system $l3cdsp/userspace/set_freq
-done
-
 echo "cpufreq" > /sys/class/devfreq/soc:qcom,mincpubw/governor
 
 # Disable CPU Retention
@@ -256,22 +231,11 @@ echo N > /sys/module/lpm_levels/L3/cpu5/ret/idle_enabled
 echo N > /sys/module/lpm_levels/L3/cpu6/ret/idle_enabled
 echo N > /sys/module/lpm_levels/L3/cpu7/ret/idle_enabled
 
-# cpuset parameters
-echo 0-2     > /dev/cpuset/background/cpus
-echo 0-3     > /dev/cpuset/system-background/cpus
-echo 4-7     > /dev/cpuset/foreground/boost/cpus
-echo 0-2,4-7 > /dev/cpuset/foreground/cpus
-echo 0-7     > /dev/cpuset/top-app/cpus
-
 # Turn off scheduler boost at the end
 echo 0 > /proc/sys/kernel/sched_boost
 
 # Turn on sleep modes.
 echo 0 > /sys/module/lpm_levels/parameters/sleep_disabled
-
-chown -h system /sys/devices/system/cpu/cpufreq/ondemand/sampling_rate
-chown -h system /sys/devices/system/cpu/cpufreq/ondemand/sampling_down_factor
-chown -h system /sys/devices/system/cpu/cpufreq/ondemand/io_is_busy
 
 emmc_boot=`getprop vendor.boot.emmc`
 case "$emmc_boot"
