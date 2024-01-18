@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "15b52c5e_8c540b99",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2024-01-18T19:45:58Z",
+      "side": 1,
+      "message": "I think everything regarding LMK can be removed, we disabled the kernel module",
+      "revId": "5cf003d95fabdf091b8a7aeec28d5d5320e25b26",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
