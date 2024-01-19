@@ -66,6 +66,11 @@ media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 # Netflix custom property
 ro.netflix.bsp_rev=Q670-14477-1
 
+# Panel
+sys.panel.color=BLACK
+sys.panel.display=SDC
+sys.panel.vendor=SDC
+
 # RCS
 persist.rcs.supported=0
 
