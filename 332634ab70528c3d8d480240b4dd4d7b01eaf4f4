@@ -16,6 +16,24 @@
       "message": "We might want to move this to device/qcom/sepolicy_vndr",
       "revId": "332634ab70528c3d8d480240b4dd4d7b01eaf4f4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7e6058d5_4da61cab",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30475
+      },
+      "writtenOn": "2024-01-20T13:59:18Z",
+      "side": 1,
+      "message": "Done.\n\nhttps://review.lineageos.org/c/LineageOS/android_device_qcom_sepolicy_vndr/+/380287",
+      "parentUuid": "b2322338_d0fd5319",
+      "revId": "332634ab70528c3d8d480240b4dd4d7b01eaf4f4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
