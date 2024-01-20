@@ -16,6 +16,24 @@
       "message": "Mind adding the explanation in the commit message here as well?",
       "revId": "3b8710bf27a3864e5fdfb3cb6a82f4ebe942f4fd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9a7722d2_e09d2a56",
+        "filename": "sepolicy/vendor/thermal-engine.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 30475
+      },
+      "writtenOn": "2024-01-20T14:01:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ac9149a0_d2a59ac3",
+      "revId": "3b8710bf27a3864e5fdfb3cb6a82f4ebe942f4fd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
