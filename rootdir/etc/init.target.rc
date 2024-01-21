@@ -81,11 +81,6 @@ on post-fs
 
     write /dev/ipa 1
 
-service sec_nvm /vendor/bin/sec_nvm
-    class core
-    user system
-    group system
-
 on post-fs-data
     mkdir /data/vendor/hbtp 0750 system system
     mkdir /data/vendor/nnhal 0700 system system
@@ -138,8 +133,6 @@ on boot
     chmod 0660 /dev/cpuset/camera-daemon/tasks
 
 #Load WLAN driver
-    insmod /vendor/lib/modules/qca_cld3_wlan.ko
-
     ####Regionalization config and prop files####
     chmod 0644 /persist/speccfg/spec
     chmod 0644 /persist/speccfg/devicetype
@@ -166,11 +159,6 @@ on boot
     setprop vendor.usb.qdss.inst.name "qdss"
     setprop sys.usb.configfs 1
 
-#start camera server as daemon
-#service qcamerasvr /system/bin/mm-qcamera-daemon
-#    class late_start
-#    user camera
-#    group camera system inet input graphics
 #pd-mapper
 service vendor.pd_mapper /vendor/bin/pd-mapper
     class core
@@ -208,27 +196,6 @@ on property:init.svc.vendor.charger=running
     start vendor.power_off_alarm
     setprop sys.usb.configfs 1
 
-## import cne init file
-#on post-fs
-#    export LD_PRELOAD /vendor/lib/libNimsWrap.so
-#
-## Allow usb charging to be disabled peristently
-#on property:persist.usb.chgdisabled=1
-#    write /sys/class/power_supply/battery/charging_enabled 0
-#
-#on property:persist.usb.chgdisabled=0
-#    write /sys/class/power_supply/battery/charging_enabled 1
-
-service spdaemon /vendor/bin/spdaemon
-    class core
-    user system
-    group system
-
-#service qosmgrd /system/bin/qosmgr /system/etc/qosmgr_rules.xml
-#   user system
-#   group system
-#   disabled
-#
 service thermal-engine /system/vendor/bin/thermal-engine  -T
    class main
    user root
@@ -237,170 +204,6 @@ service thermal-engine /system/vendor/bin/thermal-engine  -T
    socket thermal-recv-passive-client stream 0666 system system
    socket thermal-send-rule stream 0660 system system
    group root
-
-#service security-check1 /sbin/security_boot_check system
-#    class core
-#    oneshot
-#
-#service security-check2 /sbin/security_boot_check recovery
-#    class core
-#    oneshot
-#
-#service time_daemon /system/vendor/bin/time_daemon
-#   class late_start
-#   user root
-#   group root
-
-#service adsprpcd /vendor/bin/adsprpcd rootpd
-#   class main
-#   user system
-#   group system
-
-#service adsprpcd_audiopd /vendor/bin/adsprpcd audiopd
-#   class main
-#   user media
-#   group media
-
-#service adsprpcd_sensorspd /vendor/bin/adsprpcd sensorspd
-#   class core
-#   user system
-#   group system
-
-#service cdsprpcd /vendor/bin/cdsprpcd
-#   class main
-#   user system
-#   group system
-
-#service audiod /vendor/bin/audiod
-#   class late_start
-#   user system
-#   group system
-#
-#service usf_tester /vendor/bin/usf_tester
-#    user system
-#    group system inet
-#    disabled
-#
-#service usf_epos /vendor/bin/usf_epos
-#    user system
-#    group system inet
-#    disabled
-#
-#service usf_gesture /vendor/bin/usf_gesture
-#    user system
-#    group system inet
-#    disabled
-#
-
-#service usf_sync_gesture /system/bin/usf_sync_gesture
-#    user system
-#    group system inet
-#    disabled
-#
-
-#service usf_p2p /system/bin/usf_p2p
-#    user system
-#    group system inet
-#    disabled
-#
-#service usf_hovering /vendor/bin/usf_hovering
-#    user system
-#    group system inet
-#    disabled
-#
-#service usf_proximity /system/bin/usf_proximity
-#    user system
-#    group system inet
-#    disabled
-#
-#service usf-post-boot /system/vendor/bin/sh /system/etc/usf_post_boot.sh
-#    class late_start
-#    user root
-#    disabled
-#    oneshot
-#
-#on property:init.svc.bootanim=stopped
-#    start usf-post-boot
-#
-#
-#on boot
-#    insmod /system/lib/modules/adsprpc.ko
-#    insmod /system/lib/modules/mhi.ko
-## access permission for secure touch
-#    chmod 0660 /sys/devices/f9966000.i2c/i2c-1/1-004a/secure_touch_enable
-#    chmod 0440 /sys/devices/f9966000.i2c/i2c-1/1-004a/secure_touch
-#    chmod 0660 /sys/devices/f9966000.i2c/i2c-1/1-0020/secure_touch_enable
-#    chmod 0440 /sys/devices/f9966000.i2c/i2c-1/1-0020/secure_touch
-#    chown system drmrpc /sys/devices/f9966000.i2c/i2c-1/1-004a/secure_touch_enable
-#    chown system drmrpc /sys/devices/f9966000.i2c/i2c-1/1-004a/secure_touch
-#    chown system drmrpc /sys/devices/f9966000.i2c/i2c-1/1-0020/secure_touch_enable
-#    chown system drmrpc /sys/devices/f9966000.i2c/i2c-1/1-0020/secure_touch
-#
-#
-#
-#service mdm_helper /system/bin/mdm_helper
-#    class core
-#    onrestart setprop ro.service.mdm_helper_restarted "true"
-#    disabled
-#
-#service mdm_helper_proxy /system/bin/mdm_helper_proxy
-#    class core
-#    disabled
-#
-#service mdm_launcher /system/bin/sh /init.mdm.sh
-#    class main
-#    oneshot
-#
-#service qcamerasvr /system/bin/mm-qcamera-daemon
-#    class late_start
-#    user camera
-#    group camera system inet input graphics
-#
-# Stop mdm_helper_proxy in case of shutdown
-#on property:sys.shutdown.requested=*
-#    stop mdm_helper_proxy
-#
-# Stop mdm_helper_proxy on APQ target
-#on property:ro.radio.noril=yes
-#    stop mdm_helper_proxy
-#
-#on property:persist.airplane.mode.pwr.svg=enabled
-#    setprop ro.mdm_helper_proxy_req false
-#
-## Start mdm_helper_proxy
-#on property:ro.mdm_helper_proxy_req=true
-#    start mdm_helper_proxy
-#
-## QCA1530 SoC core detect
-#service gnss-detect /system/vendor/bin/gnss.qca1530.sh detect
-#   class core
-#   oneshot
-#
-## QCA1530 SoC late_start group trigger
-#service gnss-init /system/vendor/bin/gnss.qca1530.sh init
-#   class late_start
-#   oneshot
-#
-## QCA1530 SoC Service Daemon
-#service gnss-svcd /system/vendor/bin/gnss.qca1530.sh start
-#   class late_start
-#   user root
-#   group gps system qcom_diag diag log inet net_raw
-#   disabled
-
-on property:vold.decrypt=trigger_restart_framework
-   start cnss_diag
-
-service cnss_diag /system/vendor/bin/cnss_diag -q -f -t HELIUM
-   class main
-   user system
-   group system wifi inet sdcard_rw media_rw diag
-   oneshot
-
-service panel-info-sh /system/vendor/bin/sh /vendor/etc/init.panel_info.sh
-    class core
-    user root
-    oneshot
 
 service ppd /vendor/bin/mm-pp-dpps
     class late_start
@@ -418,98 +221,16 @@ on property:init.svc.vendor.hwcomposer-2-3=running
 on property:init.svc.vendor.hwcomposer-2-3=restarting
     stop ppd
 
-#service nqs /system/bin/nqs
-#    class late_start
-#    socket nqs_qsb_comm stream 660 system system
-#    user system
-#    group drmrpc
-#
-#service adsprpcd /system/vendor/bin/adsprpcd
-#   class main
-#   user media
-#   group media
-#
-##Start picture quality tuning service
-#service vqttoolservice /system/bin/vqttoolservice
-#    class late_start
-#    socket vqtss stream 0660 system system
-#    user system
-#    group system
-
-service hbtp /system/vendor/bin/hbtp_daemon
-     class main
-     user system
-     group system
-     disabled
-
-service energy-awareness /system/vendor/bin/energy-awareness
-    class main
-    user system
-    group system
-    oneshot
-
-#service vendor.contexthub-hal-1-0 /vendor/bin/hw/android.hardware.contexthub@1.0-service
-#    override
-#    class hal
-#    interface android.hardware.contexthub@1.0::IContexthub default
-#    user system
-#    group system
-#    disabled
-
 service nv_mac /vendor/bin/nv_mac
     class main
     user system
     group system inet net_admin wifi net_raw
     oneshot
 
-service displaycount /vendor/bin/displaycount
-    class late_start
-    user system
-    group system
-    oneshot
 on property:adsp.restart=1
     write /sys/module/subsystem_restart/parameters/enable_ramdumps 1
     write /sys/bus/msm_subsys/devices/subsys3/restart_level related
     write /sys/kernel/debug/msm_subsys/adsp restart
-
-on property:vendor.audio.cit.spkcal.copy=true
-    copy /data/vendor/cit/tas2557_cal.bin /mnt/vendor/persist/audio/tas2557_cal.bin
-    copy /data/vendor/cit/tas2557_cal.txt /mnt/vendor/persist/audio/tas2557_cal.txt
-    copy /data/vendor/cit/tas2557_chk.txt /mnt/vendor/persist/audio/tas2557_chk.txt
-    chmod 666 /mnt/vendor/persist/audio/tas2557_cal.bin
-    chmod 666 /mnt/vendor/persist/audio/tas2557_cal.txt
-    chmod 666 /mnt/vendor/persist/audio/tas2557_chk.txt
-    copy /data/vendor/cit/cs35l41_cal.bin /mnt/vendor/persist/audio/cs35l41_cal.bin
-    copy /data/vendor/cit/cs35l41_cal.txt /mnt/vendor/persist/audio/cs35l41_cal.txt
-    chmod 666 /mnt/vendor/persist/audio/cs35l41_cal.bin
-    chmod 666 /mnt/vendor/persist/audio/cs35l41_cal.txt
-    copy /data/vendor/cit/tas2562_cal.bin /mnt/vendor/persist/audio/tas2562_cal.bin
-    copy /data/vendor/cit/tas2562_chk.txt /mnt/vendor/persist/audio/tas2562_chk.txt
-    chmod 666 /mnt/vendor/persist/audio/tas2562_cal.bin
-    chmod 666 /mnt/vendor/persist/audio/tas2562_chk.txt
-
-service displayfeature /system/bin/displayfeature
-    class late_start
-    user root
-    group root
-
-on property:init.svc.surfaceflinger=stopped
-    stop displayfeature
-
-on property:init.svc.surfaceflinger=running
-    start displayfeature
-
-on property:init.svc.surfaceflinger=restarting
-    stop displayfeature
-
-on property:init.svc.zygote=stopped
-    stop displayfeature
-
-on property:init.svc.zygote=running
-    start displayfeature
-
-on property:init.svc.zygote=restarting
-    stop displayfeature
 
 on property:init.svc.zygote=stopped
     stop ppd
@@ -526,23 +247,6 @@ service audioshell_service /vendor/bin/audioshell_service
 
 on property:ro.vendor.miui.region=*
    start audioshell_service
-service ftc_update /vendor/bin/ftcupdate
-    user system
-    group system
-    oneshot
-    disabled
-
-on property:vendor.audio.pa.ftcupdate=0
-    start ftc_update
-service dc_cal /vendor/bin/dc_cal -b
-    class late_start
-    user system
-    group system
-    oneshot
-    disabled
-
-on property:vendor.camera.boot_complete=true
-    start dc_cal
 
 service remosaic_daemon /system/vendor/bin/remosaic_daemon
     class late_start
@@ -552,23 +256,3 @@ service remosaic_daemon /system/vendor/bin/remosaic_daemon
 
 on property:ro.build.product=grus
     start remosaic_daemon
-
-# for gts test
-on property:persist.sys.miui_optimization=false
-    write /dev/stune/top-app/schedtune.prefer_idle 1
-    write /dev/stune/top-app/schedtune.boost 100
-
-on property:persist.sys.miui_optimization=true
-    write /dev/stune/top-app/schedtune.prefer_idle 0
-    write /dev/stune/top-app/schedtune.boost 0
-
-on post-fs-data
-    chmod 0666 /dev/migt
-    restorecon /dev/migt
-    chmod 0777 /sys/module/migt/parameters/migt_freq
-    restorecon /sys/module/migt/parameters/migt_freq
-    chmod 0777 /sys/module/migt/parameters/migt_ms
-    restorecon /sys/module/migt/parameters/migt_ms
-    chmod 0777 /sys/module/migt/parameters/migt_thresh
-    restorecon /sys/module/migt/parameters/migt_thresh
-
