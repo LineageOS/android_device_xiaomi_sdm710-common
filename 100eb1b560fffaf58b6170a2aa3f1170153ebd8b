@@ -33,6 +33,23 @@
       "message": "Wait for the qcom/sepolicy commit before merging",
       "revId": "100eb1b560fffaf58b6170a2aa3f1170153ebd8b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "801fb2e3_fc4384b2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30475
+      },
+      "writtenOn": "2024-01-22T15:19:19Z",
+      "side": 1,
+      "message": "Of course... ccing Bruno.",
+      "revId": "100eb1b560fffaf58b6170a2aa3f1170153ebd8b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
