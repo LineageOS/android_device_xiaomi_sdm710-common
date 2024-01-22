@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "464fffec_877e4b26",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30475
+      },
+      "writtenOn": "2024-01-22T14:33:28Z",
+      "side": 1,
+      "message": "Tested on pyxis...\n\nAfter reboot\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nLog:\n```\n01-22 15:27:47.967  1148  1148 I ssr_setup: Using persist.vendor.ssr.restart_level for ssr_setup\n01-22 15:27:47.970  1148  1148 I ssr_setup: Enabling SSR for subsys3\n01-22 15:27:47.970  1148  1148 I ssr_setup: Enabling SSR for subsys1\n01-22 15:27:47.970  1148  1148 I ssr_setup: Enabling SSR for subsys4\n01-22 15:27:47.970  1148  1148 I ssr_setup: Enabling SSR for subsys2\n01-22 15:27:47.970  1148  1148 I ssr_setup: Enabling SSR for subsys0\n01-22 15:27:47.970  1148  1148 I ssr_setup: Enabling SSR for subsys5\n```\n\nADB:\n```\npyxis:/ # cat /sys/bus/msm_subsys/devices/subsys*/restart_level                                                                \nRELATED\nRELATED\nRELATED\nRELATED\nRELATED\nRELATED\n```",
+      "revId": "100eb1b560fffaf58b6170a2aa3f1170153ebd8b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
