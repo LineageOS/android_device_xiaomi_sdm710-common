@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "17a78540_e8138787",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30475
+      },
+      "writtenOn": "2024-01-22T14:04:45Z",
+      "side": 1,
+      "message": "Verified on pyxis using Google Messages. RCS works flawlessly.",
+      "revId": "59c25e42e15199a52024f9f19bc9fb0614654803",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
