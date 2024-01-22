@@ -230,7 +230,7 @@ ro.telephony.iwlan_operation_mode=legacy
 telephony.lteOnCdmaDevice=1
 
 # RCS
-persist.rcs.supported=0
+persist.rcs.supported=1
 
 # USB
 vendor.usb.diag.func.name=diag
