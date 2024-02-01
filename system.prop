@@ -1,15 +1,11 @@
 # Audio
+af.fast_track_multiplier=1
 audio.deep_buffer.media=true
-audio.offload.buffer.size.kb=32
-audio.offload.gapless.enabled=true
+audio.offload.min.duration.secs=30
 audio.offload.video=true
-persist.audio.fluence.speaker=true
-persist.audio.fluence.voicecall=true
-persist.audio.fluence.voicerec=false
 ro.af.client_heap_size_kbyte=7168
 ro.config.media_vol_default=10
 ro.config.vc_call_vol_steps=11
-ro.qc.sdk.audio.fluencetype=none
 
 # Camera
 camera.disable_zsl_mode=true
@@ -20,9 +16,13 @@ ro.vendor.use_data_netmgrd=true
 
 # Display
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
+ro.surface_flinger.has_HDR_display=true
+ro.surface_flinger.has_wide_color_display=true
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 ro.surface_flinger.max_virtual_display_dimension=4096
 ro.surface_flinger.protected_contents=true
+ro.surface_flinger.use_color_management=true
+ro.surface_flinger.wcg_composition_dataspace=143261696
 
 # DPM
 persist.vendor.dpm.feature=1
@@ -47,27 +47,17 @@ ro.lmk.kill_heaviest_task=true
 # Media
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 
-# Netflix custom property
-ro.netflix.bsp_rev=Q670-14477-1
-
 # Panel
 sys.panel.color=BLACK
 sys.panel.display=SDC
 sys.panel.vendor=SDC
 
-# RCS
-persist.rcs.supported=0
-
 # RIL
 DEVICE_PROVISIONED=1
+persist.radio.charge_sar_control=false
+persist.radio.modem_dynamic_sar_state=close
 persist.radio.multisim.config=dsds
-persist.vendor.radio.data_con_rprt=1
-persist.vendor.radio.enable_temp_dds=true
-persist.vendor.radio.force_on_dc=true
-persist.vendor.radio.manual_nw_rej_ct=1
-persist.vendor.radio.rat_on=combine
-persist.vendor.radio.redir_party_num=1
-persist.vendor.radio.report_codec=1
+persist.radio.sar_sar_sensor=true
 ril.subscription.types=RUIM
 ro.com.android.dataroaming=false
 ro.telephony.default_cdma_sub=0

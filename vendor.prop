@@ -1,10 +1,6 @@
 # Audio
-af.fast_track_multiplier=1
-audio.deep_buffer.media=true
 audio.offload.buffer.size.kb=32
 audio.offload.gapless.enabled=true
-audio.offload.min.duration.secs=30
-audio.offload.video=true
 persist.audio.fluence.speaker=true
 persist.audio.fluence.voicecall=true
 persist.audio.fluence.voicerec=false
@@ -140,13 +136,6 @@ persist.sys.sf.native_mode=2
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 ro.opengles.version=196610
-ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
-ro.surface_flinger.has_HDR_display=true
-ro.surface_flinger.has_wide_color_display=true
-ro.surface_flinger.max_frame_buffer_acquired_buffers=3
-ro.surface_flinger.max_virtual_display_dimension=4096
-ro.surface_flinger.use_color_management=true
-ro.surface_flinger.wcg_composition_dataspace=143261696
 
 # IMS
 persist.dbg.volte_avail_ovr=1
@@ -155,7 +144,6 @@ persist.dbg.wfc_avail_ovr=1
 
 # Media
 debug.stagefright.omx_default_rank=0
-media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 vendor.media.target.version=1
 vendor.sys.media.target.version=1
 
@@ -166,23 +154,17 @@ ro.netflix.bsp_rev=Q670-14477-1
 ro.vendor.extension_library=libqti-perfd-client.so
 
 # Radio
-persist.radio.charge_sar_control=false
-persist.radio.modem_dynamic_sar_state=close
-persist.radio.multisim.config=dsds
-persist.radio.sar_sar_sensor=true
 persist.vendor.radio.apm_sim_not_pwdn=1
 persist.vendor.radio.custom_ecc=1
 persist.vendor.radio.data_con_rprt=1
+persist.vendor.radio.enable_temp_dds=true
 persist.vendor.radio.force_on_dc=true
 persist.vendor.radio.manual_nw_rej_ct=1
 persist.vendor.radio.procedure_bytes=SKIP
 persist.vendor.radio.rat_on=combine
 persist.vendor.radio.redir_party_num=1
+persist.vendor.radio.report_codec=1
 persist.vendor.radio.sib16_support=1
-ril.subscription.types=RUIM
-ro.telephony.default_cdma_sub=0
-ro.telephony.default_network=22,22
-telephony.lteOnCdmaDevice=1
 
 # RCS
 persist.rcs.supported=1
