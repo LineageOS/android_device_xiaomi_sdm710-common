@@ -2,4 +2,9 @@ allow vendor_init proc_sysctl_autogroup:file w_file_perms;
 allow vendor_init proc_sysctl_schedboost:file w_file_perms;
 allow vendor_init proc_watermark_scale_factor:file w_file_perms;
 
+get_prop(vendor_init, persist_debug_prop)
+set_prop(vendor_init, vendor_camera_prop)
+set_prop(vendor_init, vendor_dpps_prop)
 set_prop(vendor_init, vendor_power_prop)
+set_prop(vendor_init, vendor_ssr_prop)
+set_prop(vendor_init, vendor_video_prop)
