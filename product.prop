@@ -1,0 +1,5 @@
+# RIL
+DEVICE_PROVISIONED=1
+persist.radio.charge_sar_control=false
+persist.radio.modem_dynamic_sar_state=close
+persist.radio.sar_sar_sensor=true
