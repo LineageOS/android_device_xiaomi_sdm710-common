@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#define LOG_TAG "UdfpsHander.xiaomi_sdm710"
+#define LOG_TAG "UdfpsHandler.xiaomi_sdm710"
 
 #include "UdfpsHandler.h"
 
@@ -47,7 +47,7 @@ static bool readBool(int fd) {
     return c != '0';
 }
 
-class XiaomiSdm710UdfpsHander : public UdfpsHandler {
+class XiaomiSdm710UdfpsHandler : public UdfpsHandler {
   public:
     void init(fingerprint_device_t *device) {
         mDevice = device;
@@ -117,7 +117,7 @@ class XiaomiSdm710UdfpsHander : public UdfpsHandler {
 };
 
 static UdfpsHandler* create() {
-    return new XiaomiSdm710UdfpsHander();
+    return new XiaomiSdm710UdfpsHandler();
 }
 
 static void destroy(UdfpsHandler* handler) {
