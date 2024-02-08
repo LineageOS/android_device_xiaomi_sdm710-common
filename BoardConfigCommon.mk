@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2022 The LineageOS Project
+# Copyright (C) 2024 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -167,7 +167,7 @@ endif
 ifeq ($(TARGET_HAS_NFC),true)
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest_nfc.xml
 endif
-DEVICE_MATRIX_FILE += $(COMMON_PATH)/compatibility_matrix.xml
+DEVICE_MATRIX_FILE += hardware/qcom-caf/common/compatibility_matrix.xml
 
 # VNDK
 BOARD_VNDK_VERSION := current
