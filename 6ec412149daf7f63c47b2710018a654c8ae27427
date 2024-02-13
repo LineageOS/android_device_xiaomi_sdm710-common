@@ -34,6 +34,24 @@
       "parentUuid": "a25577e9_05a85242",
       "revId": "6ec412149daf7f63c47b2710018a654c8ae27427",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f655e9bf_73f1d96e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32739
+      },
+      "writtenOn": "2024-02-13T16:55:31Z",
+      "side": 1,
+      "message": "https://github.com/LineageOS/android_kernel_qcom_sdm845/blob/38e21711cc7d43ee4a13012354c5f823ed13c906/arch/arm64/boot/dts/qcom/pm660.dtsi#L397",
+      "parentUuid": "6ac28cef_84c63c2d",
+      "revId": "6ec412149daf7f63c47b2710018a654c8ae27427",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
