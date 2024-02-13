@@ -52,6 +52,24 @@
       "parentUuid": "6ac28cef_84c63c2d",
       "revId": "6ec412149daf7f63c47b2710018a654c8ae27427",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "196f77c2_9a0dd41a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2024-02-13T17:03:46Z",
+      "side": 1,
+      "message": "```\nvela:/sys/class/thermal # grep -E \u0027xo.therm\u0027 */type                                                                                                                                                                                        \nthermal_zone37/type:xo-therm-step\nthermal_zone38/type:xo_therm\nvela:/sys/class/thermal # \n```\n\n\u003e Please check with your OEM modifications as they could have renamed the sensor for compatibility reasons\n\nI didn\u0027t look into it yet, asking the core maintainers if they already knew about it right now",
+      "parentUuid": "f655e9bf_73f1d96e",
+      "revId": "6ec412149daf7f63c47b2710018a654c8ae27427",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
