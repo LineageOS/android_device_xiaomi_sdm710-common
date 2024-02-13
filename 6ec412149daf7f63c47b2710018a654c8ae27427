@@ -70,6 +70,24 @@
       "parentUuid": "f655e9bf_73f1d96e",
       "revId": "6ec412149daf7f63c47b2710018a654c8ae27427",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3c54d65e_7429efc2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32739
+      },
+      "writtenOn": "2024-02-13T17:09:38Z",
+      "side": 1,
+      "message": "Just checked xiaomi sdm710 kernel source and as guessed xiaomi\u0027s dts modifications ended up renaming the thermal zone.\n\ngrus:\n\nhttps://github.com/LineageOS/android_kernel_xiaomi_sdm710/blob/8e097a610bef5623f05a24702add8db6639f988a/arch/arm64/boot/dts/qcom/grus-sdm710.dtsi#L683\n\nhttps://github.com/LineageOS/android_kernel_xiaomi_sdm710/blob/8e097a610bef5623f05a24702add8db6639f988a/arch/arm64/boot/dts/qcom/grus-sdm710.dtsi#L703-L716\n\nsirius:\n\nhttps://github.com/LineageOS/android_kernel_xiaomi_sdm710/blob/8e097a610bef5623f05a24702add8db6639f988a/arch/arm64/boot/dts/qcom/sirius-sdm710.dtsi#L613\n\nhttps://github.com/LineageOS/android_kernel_xiaomi_sdm710/blob/8e097a610bef5623f05a24702add8db6639f988a/arch/arm64/boot/dts/qcom/sirius-sdm710.dtsi#L633-L646\n\nRenaming the thermal zones back would restore the compatibility with QTI thermal HAL.",
+      "parentUuid": "f655e9bf_73f1d96e",
+      "revId": "6ec412149daf7f63c47b2710018a654c8ae27427",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
