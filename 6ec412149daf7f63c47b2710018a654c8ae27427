@@ -106,6 +106,24 @@
       "parentUuid": "3c54d65e_7429efc2",
       "revId": "6ec412149daf7f63c47b2710018a654c8ae27427",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "621180e5_7433a571",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32739
+      },
+      "writtenOn": "2024-02-13T17:16:29Z",
+      "side": 1,
+      "message": "Well can confirm the same with vela/pyxis\n\nhttps://github.com/LineageOS/android_kernel_xiaomi_sdm710/blob/8e097a610bef5623f05a24702add8db6639f988a/arch/arm64/boot/dts/qcom/pyxis-cosmos-sdm710-common.dtsi#L570",
+      "parentUuid": "ed2c90f5_fbb92dbb",
+      "revId": "6ec412149daf7f63c47b2710018a654c8ae27427",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
