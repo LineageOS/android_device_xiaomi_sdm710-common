@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a25577e9_05a85242",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2024-02-13T11:50:32Z",
+      "side": 1,
+      "message": "Even 1.0 HAL uses xo-therm-adc thermal zone for skin temperature, but we don\u0027t have that thermal zone, only xo_therm",
+      "revId": "6ec412149daf7f63c47b2710018a654c8ae27427",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
