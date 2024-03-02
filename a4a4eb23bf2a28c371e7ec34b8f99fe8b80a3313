@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0456d262_0726298b",
+        "filename": "amplifier/tas2562.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 29080
+      },
+      "writtenOn": "2024-03-02T19:18:35Z",
+      "side": 1,
+      "message": "static?",
+      "revId": "a4a4eb23bf2a28c371e7ec34b8f99fe8b80a3313",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
