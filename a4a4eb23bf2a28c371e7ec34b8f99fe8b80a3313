@@ -3,6 +3,23 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "1e937ca9_4221eb8a",
+        "filename": "amplifier/tas2562.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 29080
+      },
+      "writtenOn": "2024-03-02T19:23:44Z",
+      "side": 1,
+      "message": "are you sure it starts from -1?\nin kernel it\u0027s 0: https://github.com/LineageOS/android_kernel_xiaomi_sdm710/blob/be6ca5c2b901a7f554c1d949b72651798f59b361/techpack/audio/asoc/codecs/tas2562/tas2562-algo.c#L109",
+      "revId": "a4a4eb23bf2a28c371e7ec34b8f99fe8b80a3313",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "0456d262_0726298b",
         "filename": "amplifier/tas2562.c",
         "patchSetId": 1
