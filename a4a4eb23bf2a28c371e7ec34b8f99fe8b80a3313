@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "70ea5c74_24a3b80d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30475
+      },
+      "writtenOn": "2024-03-03T19:49:36Z",
+      "side": 1,
+      "message": "Just for curious, what adaptations?",
+      "parentUuid": "eae9a28e_90539fd7",
+      "revId": "a4a4eb23bf2a28c371e7ec34b8f99fe8b80a3313",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "1e937ca9_4221eb8a",
