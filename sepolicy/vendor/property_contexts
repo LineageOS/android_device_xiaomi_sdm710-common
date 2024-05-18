@@ -45,9 +45,6 @@ ro.miui.cust_variant                            u:object_r:exported_default_prop
 # Mlipay
 persist.vendor.sys.pay                          u:object_r:vendor_tee_listener_prop:s0
 
-# Power
-vendor.powerhal.                                u:object_r:vendor_power_prop:s0
-
 # Sensors
 persist.sensor.                                 u:object_r:vendor_sensors_prop:s0
 invn.hal.data.                                  u:object_r:vendor_sensors_prop:s0
