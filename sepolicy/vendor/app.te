@@ -1,2 +1,3 @@
-get_prop({ appdomain -isolated_app_all }, vendor_fp_prop)
+# Allow apps to read mlipay and IFAA props
+get_prop({ appdomain -isolated_app_all }, vendor_fingerprint_prop)
 get_prop({ appdomain -isolated_app_all }, vendor_tee_listener_prop)
