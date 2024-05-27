@@ -1,0 +1,14 @@
+type vendor_lhd, domain;
+type vendor_lhd_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(vendor_lhd)
+net_domain(vendor_lhd)
+
+allow vendor_lhd vendor_gps_data_file:dir create_dir_perms;
+allow vendor_lhd vendor_gps_data_file:fifo_file create_file_perms;
+allow vendor_lhd vendor_gps_data_file:file create_file_perms;
+
+allow vendor_lhd gps_device:chr_file rw_file_perms;
+allow vendor_lhd sysfs_gps:file rw_file_perms;
+
+wakelock_use(vendor_lhd)
