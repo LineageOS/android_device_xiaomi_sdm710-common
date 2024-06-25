@@ -8,6 +8,9 @@ COMMON_PATH := device/xiaomi/sdm710-common
 
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
+# A/B
+AB_OTA_UPDATER := false
+
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
