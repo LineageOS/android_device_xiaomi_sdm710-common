@@ -16,6 +16,23 @@
       "message": "Please see https://github.com/LineageOS/android_kernel_xiaomi_sdm710/commit/e11675bf36468a4ec097e7ecd775843e3c5c8c03 and https://github.com/kyasu/android_device_xiaomi_grus/commit/a9bced7a440b9c3c1186546d5ac4e0c9c46d7904",
       "revId": "c008b4991bad10ee48ed50625593f6f3069b454a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "612dad7f_573c99cb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30475
+      },
+      "writtenOn": "2024-06-30T14:41:58Z",
+      "side": 1,
+      "message": "This is not needed ... our devices are using:\n`/sys/class/power_supply/battery/input_suspend`",
+      "revId": "c008b4991bad10ee48ed50625593f6f3069b454a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
