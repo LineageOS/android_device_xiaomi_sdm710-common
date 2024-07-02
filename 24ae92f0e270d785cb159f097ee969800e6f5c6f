@@ -34,6 +34,24 @@
       "parentUuid": "e6d4e363_d209fd86",
       "revId": "24ae92f0e270d785cb159f097ee969800e6f5c6f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "119e0df8_45cf6808",
+        "filename": "permissions/wfd-system-ext-privapp-permissions-qti.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2024-07-02T10:33:13Z",
+      "side": 1,
+      "message": "Since you are kanging the stack anyway you can just add the xml in that list",
+      "parentUuid": "b612fe73_2c2b7488",
+      "revId": "24ae92f0e270d785cb159f097ee969800e6f5c6f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
