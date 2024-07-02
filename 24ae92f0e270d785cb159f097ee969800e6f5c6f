@@ -16,6 +16,24 @@
       "message": "Not sure you should be putting this in the device tree",
       "revId": "24ae92f0e270d785cb159f097ee969800e6f5c6f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b612fe73_2c2b7488",
+        "filename": "permissions/wfd-system-ext-privapp-permissions-qti.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2024-07-02T10:31:42Z",
+      "side": 1,
+      "message": "Ah probably related to mi845, for whatever reason Bruno keeps it in device tree",
+      "parentUuid": "e6d4e363_d209fd86",
+      "revId": "24ae92f0e270d785cb159f097ee969800e6f5c6f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
