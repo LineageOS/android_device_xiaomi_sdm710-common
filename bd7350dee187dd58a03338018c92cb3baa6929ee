@@ -24,6 +24,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "88630777_3e56d50f",
+        "filename": "media/media_codecs.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 124,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-07-06T13:52:41Z",
+      "side": 0,
+      "message": "Ignore this one, should be only for hw codec2.",
+      "parentUuid": "7a711df9_42615a36",
+      "range": {
+        "startLine": 124,
+        "startChar": 19,
+        "endLine": 124,
+        "endChar": 44
+      },
+      "revId": "bd7350dee187dd58a03338018c92cb3baa6929ee",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "371e62b2_6d87ce59",
