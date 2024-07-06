@@ -1,4 +1,22 @@
 {
-  "comments": [],
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a7d47cda_05ff1848",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-07-06T12:48:17Z",
+      "side": 1,
+      "message": "Out of curiosity, is there anything including media_codecs_google_c2*.xml?",
+      "revId": "7190646448e127d56615fb7fa2bc6fba50470999",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ],
   "submitRequirementResults": []
 }
