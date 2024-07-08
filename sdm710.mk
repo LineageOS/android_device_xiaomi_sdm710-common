@@ -148,6 +148,7 @@ PRODUCT_PACKAGES += \
     libtinyxml \
     vendor.display.config@1.0.vendor \
     vendor.display.config@2.0 \
+    vendor.qti.hardware.display.config-V5-ndk \
     vendor.qti.hardware.display.mapper@2.0.vendor \
     vendor.qti.hardware.display.mapper@3.0.vendor
 
@@ -464,6 +465,7 @@ PRODUCT_COPY_FILES += \
 
 # Wi-Fi Display
 PRODUCT_PACKAGES += \
+    android.media.audio.common.types-V2-cpp \
     libnl \
     libpng.vendor \
     libwfdaac_vendor
