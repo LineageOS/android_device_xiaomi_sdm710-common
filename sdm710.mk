@@ -119,7 +119,7 @@ PRODUCT_PACKAGES += \
 
 # Consumer IR
 PRODUCT_PACKAGES += \
-    android.hardware.ir@1.0-service.xiaomi
+    android.hardware.ir-service.xiaomi
 
 # Device-specific settings
 PRODUCT_PACKAGES += \
