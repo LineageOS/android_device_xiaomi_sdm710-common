@@ -29,6 +29,9 @@ function blob_fixup() {
         vendor/bin/pm-service)
             grep -q libutils-v33.so "${2}" || "${PATCHELF}" --add-needed "libutils-v33.so" "${2}"
             ;;
+        vendor/etc/seccomp_policy/atfwd@2.0.policy)
+            grep -q 'gettid: ' "${2}" || echo 'gettid: 1' >> "${2}"
+            ;;
         vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy)
             grep -q 'madvise: ' "${2}" || echo 'madvise: 1' >> "${2}"
             ;;
