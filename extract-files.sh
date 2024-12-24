@@ -30,7 +30,7 @@ function blob_fixup() {
             grep -q libutils-v33.so "${2}" || "${PATCHELF}" --add-needed "libutils-v33.so" "${2}"
             ;;
         vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy)
-            echo 'madvise: 1' >> ${2}
+            grep -q 'madvise: ' "${2}" || echo 'madvise: 1' >> "${2}"
             ;;
         vendor/lib64/libwvhidl.so|vendor/lib64/mediadrm/libwvdrmengine.so)
             if ! "${PATCHELF}" --print-needed "${2}" | grep -q "libcrypto_shim.so"; then
