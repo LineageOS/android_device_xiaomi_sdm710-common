@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8e46fd00_fe15953d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30475
+      },
+      "writtenOn": "2025-01-08T12:52:15Z",
+      "side": 1,
+      "message": "Merging after discussion with @me.cafebabe@gmail.com and @seba@sebaubuntu.dev",
+      "revId": "64f3b457155aeed3d60ed8a3bebb164204ceff29",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
