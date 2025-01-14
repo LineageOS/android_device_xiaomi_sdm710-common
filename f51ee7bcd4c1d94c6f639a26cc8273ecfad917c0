@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1b1111f1_4cd40093",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2025-01-14T19:22:51Z",
+      "side": 1,
+      "message": "at least qcacld still reads the value and not defaulted to the ini value?",
+      "revId": "f51ee7bcd4c1d94c6f639a26cc8273ecfad917c0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
