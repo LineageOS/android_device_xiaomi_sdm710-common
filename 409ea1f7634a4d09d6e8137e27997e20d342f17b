@@ -16,6 +16,23 @@
       "message": "drivers/staging/qcacld-3.0/core/hdd/inc/wlan_hdd_cfg.h:\n\n```\n#define CFG_TDLS_SUPPORT_ENABLE                     \"gEnableTDLSSupport\"\n#define CFG_TDLS_SUPPORT_ENABLE_MIN                 (0)\n#define CFG_TDLS_SUPPORT_ENABLE_MAX                 (1)\n#define CFG_TDLS_SUPPORT_ENABLE_DEFAULT             (0)\n```",
       "revId": "409ea1f7634a4d09d6e8137e27997e20d342f17b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2402b322_33e05178",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30475
+      },
+      "writtenOn": "2025-01-14T21:47:47Z",
+      "side": 1,
+      "message": "ok, lets drop this",
+      "revId": "409ea1f7634a4d09d6e8137e27997e20d342f17b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
