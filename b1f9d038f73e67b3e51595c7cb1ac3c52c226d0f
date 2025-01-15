@@ -52,6 +52,24 @@
       "parentUuid": "2a378652_fde532c7",
       "revId": "b1f9d038f73e67b3e51595c7cb1ac3c52c226d0f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4fee83fa_fe96f2ef",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30475
+      },
+      "writtenOn": "2025-01-15T13:47:57Z",
+      "side": 1,
+      "message": "Nevermind, I look inside LA.UM.9.8.c26-02700-SDM710.0 which is much newer than LA.UM.9.8.r1-06000-SDM710.0 and gEnableLPRx is still disabled.\n\nAbandoning this change and removing from the topic.",
+      "parentUuid": "573b5f31_1ec54ce5",
+      "revId": "b1f9d038f73e67b3e51595c7cb1ac3c52c226d0f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
