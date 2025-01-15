@@ -16,6 +16,24 @@
       "message": "at least qcacld still reads the value and not defaulted to the ini value?",
       "revId": "f51ee7bcd4c1d94c6f639a26cc8273ecfad917c0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "20c4c8f2_fadc5bf8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30475
+      },
+      "writtenOn": "2025-01-15T10:04:51Z",
+      "side": 1,
+      "message": "This was taken from LA.UM.9.8.c27-04100-SDM710.0",
+      "parentUuid": "1b1111f1_4cd40093",
+      "revId": "f51ee7bcd4c1d94c6f639a26cc8273ecfad917c0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
