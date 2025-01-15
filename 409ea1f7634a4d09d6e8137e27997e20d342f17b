@@ -33,6 +33,23 @@
       "message": "ok, lets drop this",
       "revId": "409ea1f7634a4d09d6e8137e27997e20d342f17b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "52b10525_6b53b01a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30475
+      },
+      "writtenOn": "2025-01-15T13:50:40Z",
+      "side": 1,
+      "message": "@me.cafebabe@gmail.com\nThe issue is that our kernel inherits wlan stack from qcom_sdm845 that contains Android 10 based driver that is different from Android 11 one from LA.UM.9.8.c27-04100-SDM710.0.\n\nAs all our maintained devices have Android 11 firmware it could be fine to update the stack in kernel. I\u0027m working on it.",
+      "revId": "409ea1f7634a4d09d6e8137e27997e20d342f17b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
