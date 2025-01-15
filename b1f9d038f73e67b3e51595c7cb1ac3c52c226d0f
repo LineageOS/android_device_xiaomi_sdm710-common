@@ -16,6 +16,24 @@
       "message": "CLO sdm710 has kept it\n\nhttps://git.codelinaro.org/clo/la/platform/vendor/qcom/wlan/-/blob/LA.UM.9.8.r1-06000-SDM710.0/sdm710/WCNSS_qcom_cfg.ini?ref_type\u003dtags#L164",
       "revId": "b1f9d038f73e67b3e51595c7cb1ac3c52c226d0f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2a378652_fde532c7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30475
+      },
+      "writtenOn": "2025-01-15T05:32:35Z",
+      "side": 1,
+      "message": "The same is also truth for sdm845...\nBruno, you have enabled it for sdm845... what was the reason?",
+      "parentUuid": "9986aea7_dd05f53b",
+      "revId": "b1f9d038f73e67b3e51595c7cb1ac3c52c226d0f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
