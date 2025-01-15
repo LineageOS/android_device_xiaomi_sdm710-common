@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "97262169_0128816a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30475
+      },
+      "writtenOn": "2025-01-15T15:16:02Z",
+      "side": 1,
+      "message": "Taken from LA.UM.9.8.c26-02700-SDM710.0",
+      "revId": "ae8019459c5476ba55d567bc1175838282e36207",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
