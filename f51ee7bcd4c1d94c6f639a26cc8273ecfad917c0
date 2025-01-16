@@ -34,6 +34,24 @@
       "parentUuid": "1b1111f1_4cd40093",
       "revId": "f51ee7bcd4c1d94c6f639a26cc8273ecfad917c0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1d72252b_96841e62",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30475
+      },
+      "writtenOn": "2025-01-16T15:16:11Z",
+      "side": 1,
+      "message": "Wifi driver is going to be updated in kernel_xiaomi_sdm710 to LA.UM.9.8.c26-02700-SDM710.0",
+      "parentUuid": "20c4c8f2_fadc5bf8",
+      "revId": "f51ee7bcd4c1d94c6f639a26cc8273ecfad917c0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
