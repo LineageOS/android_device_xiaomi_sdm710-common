@@ -16,6 +16,24 @@
       "message": "Keep this in mind https://review.lineageos.org/c/LineageOS/android_device_oneplus_sm8250-common/+/410870",
       "revId": "c0279a42b0ab475c1bbe8b868bd4af0b14142cb6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a71a5faa_ceda554a",
+        "filename": "sdm710.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 357,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-02-05T00:43:46Z",
+      "side": 0,
+      "message": "Nvm I saw the next commit",
+      "parentUuid": "31f5f4c0_4e71646b",
+      "revId": "c0279a42b0ab475c1bbe8b868bd4af0b14142cb6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
