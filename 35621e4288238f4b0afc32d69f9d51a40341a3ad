@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3ab8b807_a990dc1d",
+        "filename": "manifest.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 95,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-03-17T08:40:52Z",
+      "side": 1,
+      "message": "You\u0027re supposed to bump this, not config",
+      "revId": "35621e4288238f4b0afc32d69f9d51a40341a3ad",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
