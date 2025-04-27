@@ -64,3 +64,7 @@ on boot
 on boot
     chmod 0660 /sys/class/power_supply/battery/input_suspend
     chown system system /sys/class/power_supply/battery/input_suspend
+
+# USB
+on property:sys.boot_completed=1 && property:vendor.usb.uvc.function.init=1
+    write /config/usb_gadget/g1/functions/uvc.0/streaming_maxpacket ${vendor.usb.uvc.payload_transfer_size}
