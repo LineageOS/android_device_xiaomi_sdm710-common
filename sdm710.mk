@@ -268,7 +268,7 @@ PRODUCT_PACKAGES += \
 
 # Rootdir
 PRODUCT_PACKAGES += \
-    fstab.qcom \
+    fstab.qcom fstab.qcom.dsu \
     fstab.qcom.ramdisk
 
 PRODUCT_PACKAGES += \

@@ -48,10 +48,26 @@ on early-fs
     # We need vold early for metadata encryption
     start vold
 
-on fs
+on fs && property:ro.gsid.image_running=0
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
     mount_all /vendor/etc/fstab.qcom --early
+
+on fs && property:ro.gsid.image_running=1
+    wait /dev/block/platform/soc/${ro.boot.bootdevice}
+    symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
+    mount_all /vendor/etc/fstab.qcom.dsu --early
+
+on late-fs && property:ro.gsid.image_running=0
+    # Mount RW partitions which need run fsck
+    mount_all /vendor/etc/fstab.qcom --late
+
+on late-fs && property:ro.gsid.image_running=1
+    # Mount RW partitions which need run fsck
+    mount_all /vendor/etc/fstab.qcom.dsu --late
+
+
+on fs
     chown root system /mnt/vendor/persist
     chmod 0771 /mnt/vendor/persist
     restorecon_recursive /mnt/vendor/persist
@@ -67,10 +83,6 @@ on fs
 
     chown system system /proc/tp_selftest
     chmod 0644 /proc/tp_selftest
-
-on late-fs
-    # Mount RW partitions which need run fsck
-    mount_all /vendor/etc/fstab.qcom --late
 
 on post-fs
     # set RLIMIT_MEMLOCK to 64MB

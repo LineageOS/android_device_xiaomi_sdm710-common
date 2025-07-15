@@ -12,6 +12,13 @@ prebuilt_etc {
     ramdisk_available: true,
 }
 
+prebuilt_etc {
+    name: "fstab.qcom.dsu",
+    src: "etc/fstab.qcom.dsu",
+    vendor: true,
+    ramdisk_available: true,
+}
+
 // Init scripts
 sh_binary {
     name: "init.qcom.early_boot.sh",
