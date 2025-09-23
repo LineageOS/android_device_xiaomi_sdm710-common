@@ -1,8 +1,0 @@
-on boot
-    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display-primary/dc_dimming
-    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display-primary/hbm
-
-service vendor.livedisplay-hal-2-1 /vendor/bin/hw/vendor.lineage.livedisplay@2.1-service.sdm710
-    class late_start
-    user system
-    group system

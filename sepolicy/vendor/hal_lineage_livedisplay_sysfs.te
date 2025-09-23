@@ -1,0 +1,2 @@
+allow hal_lineage_livedisplay_sysfs sysfs_graphics:dir search;
+allow hal_lineage_livedisplay_sysfs sysfs_graphics:file rw_file_perms;
