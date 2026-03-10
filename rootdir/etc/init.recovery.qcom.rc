@@ -25,6 +25,12 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
+service hvdcp_opti /system/bin/hvdcp_opti
+    user root
+    group system wakelock
+    task_profiles ServiceCapacityLow
+    seclabel u:r:hvdcp:s0
+
 on init
     write /sys/class/backlight/panel0-backlight/brightness 200
     setprop sys.usb.configfs 1

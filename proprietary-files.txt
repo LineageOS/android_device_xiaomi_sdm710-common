@@ -77,7 +77,7 @@ vendor/lib64/libsdsprpc.so
 vendor/lib64/libsysmon_cdsp_skel.so
 
 # Charger
-vendor/bin/hvdcp_opti
+vendor/bin/hvdcp_opti;RECOVERY_AVAILABLE
 
 # CNE
 vendor/app/CneApp/CneApp.apk
